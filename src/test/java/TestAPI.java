@@ -16,7 +16,7 @@ public class TestAPI {
     public static void init() {
         spec = new RequestSpecBuilder()
                 .setContentType(ContentType.JSON)
-                .setProxy("gate.swissre.com", 9443)
+               // .setProxy("gate.swissre.com", 9443)
                 .setBaseUri("https://jsonplaceholder.typicode.com")
                 .addFilter(new ResponseLoggingFilter())
                 .addFilter(new RequestLoggingFilter())
